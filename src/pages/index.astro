@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import "@fontsource/poppins/100.css";
+import "@fontsource/poppins/200.css";
+import "@fontsource/poppins/300.css";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/700.css";
+import "@fontsource/poppins/800.css";
+import "@fontsource/poppins/900.css";
+import Header from "../components/Header.astro";
+---
+
+<Layout title="Harold Navía Web">
+  <main>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <img
+        class="rounded-full w-12 h-12 mb-4"
+        src="../photos/corbata.png"
+        alt="Harold photo"
+      />
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+        Hola, soy Harold <a
+          href="https://www.linkedin.com/in/harold-navia/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-lg opacity-90">
+        +7 años de experiencia como desarrollador web fullstack, mi objetivo es
+        combinar mis habilidades técnicas con mi creatividad para construir
+        experiencias digitales excepcionales
+      </h2>
+    </section>
+
+    <!-- Soy un apasionado desarrollador web con experiencia en la creación de
+        sitios web interactivos y funcionales. Mi objetivo es combinar mis
+        habilidades técnicas con mi creatividad para construir experiencias
+        digitales excepcionales.
+        Mi trayectoria incluye trabajar en el sector bancario durante 8 años, donde
+    adquirí conocimientos en sistemas financieros, seguridad de datos y procesos
+    de negocio. -->
+  </main>
+</Layout>

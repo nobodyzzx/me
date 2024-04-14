@@ -1,0 +1,44 @@
+---
+import Badge from "./Badge.astro";
+import SocialPills from "./SocialPills.astro";
+import Githubicon from "./icons/Github.astro";
+import Linkedinicon from "./icons/Linkedin.astro";
+import Mailicon from "./icons/Mail.astro";
+---
+
+<section class="w-full lg:w-[740px] mx-auto py-44">
+  <img
+    class="rounded-full w-12 h-12 mb-4"
+    src="../photos/corbata.png"
+    alt="Harold photo"
+  />
+  <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+    Hola, soy Harold <a
+      href="https://www.linkedin.com/in/harold-navia/"
+      target="_blank"
+      rel="noopener"
+      class="flex justify-center items-center"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </h1>
+  <h2 class="text-lg opacity-90">
+    +7 años de experiencia como <span class="text-[#FFAB00] font-medium"
+      >desarrollador web fullstack</span
+    >, mi objetivo es combinar mis habilidades técnicas con mi creatividad para
+    construir <span class="text-[#FFAB00] font-medium"
+      >experiencias digitales excepcionales.</span
+    >
+  </h2>
+  <nav class="flex gap-x-4 pt-2">
+    <SocialPills href="https://www.linkedin.com/in/harold-navia/">
+      <Linkedinicon class="h-4 w-4" /> LindekIn
+    </SocialPills>
+    <SocialPills href="https://github.com/nobodyzzx">
+      <Githubicon class="h-6 w-6" /> Github
+    </SocialPills>
+    <SocialPills href="https://github.com/nobodyzzx">
+      <Mailicon class="h-6 w-6" /> Correo
+    </SocialPills>
+  </nav>
+</section>

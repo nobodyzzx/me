@@ -1,18 +1,21 @@
 ---
 import Badge from "./Badge.astro";
+import SectionContainer from "./SectionContainer.astro";
 import SocialPills from "./SocialPills.astro";
 import Githubicon from "./icons/Github.astro";
 import Linkedinicon from "./icons/Linkedin.astro";
 import Mailicon from "./icons/Mail.astro";
 ---
 
-<section class="w-full lg:w-[740px] mx-auto py-44">
+<SectionContainer class="py-44 pb-26">
   <img
     class="rounded-full w-12 h-12 mb-4"
     src="../photos/corbata.png"
     alt="Harold photo"
   />
-  <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+  <h1
+    class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4 lg:pb-10"
+  >
     Hola, soy Harold <a
       href="https://www.linkedin.com/in/harold-navia/"
       target="_blank"
@@ -22,7 +25,7 @@ import Mailicon from "./icons/Mail.astro";
       <Badge>Disponible para trabajar</Badge>
     </a>
   </h1>
-  <h2 class="text-lg opacity-90">
+  <h2 class="text-sm lg:text-lg text-wrap max-w-[700px]">
     +7 años de experiencia como <span class="text-[#FFAB00] font-medium"
       >desarrollador web fullstack</span
     >, mi objetivo es combinar mis habilidades técnicas con mi creatividad para
@@ -30,15 +33,15 @@ import Mailicon from "./icons/Mail.astro";
       >experiencias digitales excepcionales.</span
     >
   </h2>
-  <nav class="flex gap-x-4 pt-2">
+  <nav class="flex gap-4 pt-2 flex-wrap">
     <SocialPills href="https://www.linkedin.com/in/harold-navia/">
-      <Linkedinicon class="h-4 w-4" /> LindekIn
+      <Linkedinicon class="size-6" /> LindekIn
     </SocialPills>
     <SocialPills href="https://github.com/nobodyzzx">
-      <Githubicon class="h-6 w-6" /> Github
+      <Githubicon class="size-6" /> Github
     </SocialPills>
-    <SocialPills href="https://github.com/nobodyzzx">
-      <Mailicon class="h-6 w-6" /> Correo
+    <SocialPills href="mailto:harold.navia@tecnocondor.dev">
+      <Mailicon class="size-6" /> Correo
     </SocialPills>
   </nav>
-</section>
+</SectionContainer>

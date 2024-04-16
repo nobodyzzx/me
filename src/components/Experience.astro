@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+import SectionContainer from "./SectionContainer.astro";
+import Bagicon from "./icons/Bag.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Desarrollador Full Stack",
+    description:
+      "Desarrollo software de gestión, control y seguimiento, así como páginas web y aplicaciones multiplataforma, incluyendo la implementación y capacitación.",
+    link: "https://www.tecnocondor.dev",
+  },
+  {
+    date: "Enero 2017",
+    title: "Asistente operativo de Sucursal",
+    description:
+      "Seguimiento, supervisión y control del área operativa de las agencias de la sucursal La Paz Oruro procesos operativos de agencia, manejo de bóveda y cajas, Punto de Reclamo, contratación de personal operativo (Asistente operativo y cajeros), capacitación en procedimientos operativos.",
+  },
+];
+---
+
+<SectionContainer id="experiencia">
+  <h2 class="flex gap-x-2 items-center text-2xl font-semibold mb-6">
+    <Bagicon class="size-6" />
+    Experiencia Laboral
+  </h2>
+  <ol class="relative border-s border-gray-200 ml-3">
+    {
+      EXPERIENCE.map((experience) => (
+        <li class="mb-10 ms-4">
+          <ExperienceItem {...experience} />
+        </li>
+      ))
+    }
+  </ol>
+</SectionContainer>

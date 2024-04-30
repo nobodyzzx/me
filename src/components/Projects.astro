@@ -1,0 +1,39 @@
+---
+import Codeicon from "./icons/Code.astro";
+import SectionContainer from "./SectionContainer.astro";
+import ExperienceItem from "./ExperienceItem.astro";
+import Github from "./icons/Github.astro";
+
+const PROJECTS = [
+  {
+    title: "Desarrollador Full Stack",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc.",
+    link: "#",
+    github: "#",
+    image: "https://placehold.co/300x200",
+    tags: ["Next.js", "React", "TailwindCSS", "Node.js", "MongoDB"],
+  },
+];
+---
+
+<SectionContainer id="experiencia">
+  <h2 class="flex gap-x-2 items-center text-2xl font-semibold mb-6">
+    <Codeicon class="size-6" />
+    Projectos
+  </h2>
+  {
+    PROJECTS.map(({ image, title, description, tags }) => (
+      <article>
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <ul>
+          {tags.map((tag) => (
+            <li>{tag}</li>
+          ))}
+        </ul>
+        <img src={image} alt={`Captura de pantalla del proyecto ${image}`} />
+      </article>
+    ))
+  }
+</SectionContainer>
